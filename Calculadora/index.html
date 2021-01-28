@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora Simples</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id ="container">
+        <div id="calculadora">
+            <div id="result">
+                <div id ="history">
+                    <p id="history-value"></p>
+                </div>
+                <div id="output">
+                    <p id="output-value">0</p>
+                </div>
+            </div>
+            <div id="keyboard">
+                <button class="operator" value="C" onclick="clearHistory();"  >C</button>
+                <button class="operator" value=""onclick="clearHistory();" >CE</button>
+                <button class="operator" value="%" onclick="printOperator('%');" >%</button>
+                <button class="operator" value="/" onclick="printOperator('/');" >&#247;</button>
+                <button class="number"   value="7" onclick="printOutput(7);" >7</button>
+                <button class="number"   value="8" onclick="printOutput(8);" >8</button>
+                <button class="number"   value="9" onclick="printOutput(9);" >9</button>
+                <button class="operator" value="*" onclick="printOperator('*');" >&times;</button>
+                <button class="number"   value="4" onclick="printOutput(4);" >4</button>
+                <button class="number"   value="5" onclick="printOutput(5);" >5</button>
+                <button class="number"   value="6" onclick="printOutput(6);" >6</button>
+                <button class="operator" value="-" onclick="printOperator('-');" >-</button>
+                <button class="number"   value="1" onclick="printOutput(1);" >1</button>
+                <button class="number"   value="2" onclick="printOutput(2);" >2</button>
+                <button class="number"   value="3" onclick="printOutput(3);" >3</button>
+                <button class="operator" value="+" onclick="printOperator('+');" >+</button>
+                <button class="empty"    value=""   ></button>
+                <button class="number"   value="0" onclick="printOutput(0);" >0</button>
+                <button class="empty"    value=""   ></button>
+                <button class="operator"  onclick="calculate();" >=</button>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
